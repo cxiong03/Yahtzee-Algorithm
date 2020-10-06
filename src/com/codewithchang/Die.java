@@ -9,8 +9,7 @@ public class Die {
 Default constructor
  */
 public Die() {
-    this.numSides = 0;
-    this.value = 0;
+    this.value = 1;
 }
 
 /*
@@ -24,8 +23,7 @@ public Die(int sides){
 /*
 method to roll our die
  */
-public int roll()
-{
+public int roll() {
     Random rand = new Random();
     value = rand.nextInt(numSides) +1;
 
